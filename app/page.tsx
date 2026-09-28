@@ -9,8 +9,7 @@ const banners = [
   {
     eyebrow: "ALMASSO MARKETPLACE",
     title: "Get Hooked on Quality",
-    description:
-      "Discover quality products from trusted sellers in Somalia, Kenya and across Africa.",
+    description: "Discover quality products from trusted sellers in Somalia, Kenya and across Africa.",
     button: "Shop Now",
     bg: BRAND_BLUE,
     accent: BRAND_ORANGE,
@@ -19,8 +18,7 @@ const banners = [
   {
     eyebrow: "QUALITY YOU CAN TRUST",
     title: "Everything You Need in One Place",
-    description:
-      "Shop electronics, fashion, beauty, home essentials, groceries and more.",
+    description: "Shop electronics, fashion, beauty, home essentials, groceries and more.",
     button: "Explore Products",
     bg: "#102A43",
     accent: BRAND_ORANGE,
@@ -29,8 +27,7 @@ const banners = [
   {
     eyebrow: "ALMASSO DELIVERY",
     title: "Shop Today. Get It Delivered.",
-    description:
-      "Simple shopping, secure checkout and reliable delivery built for modern Africa.",
+    description: "Simple shopping, secure checkout and reliable delivery built for modern Africa.",
     button: "Start Shopping",
     bg: BRAND_ORANGE,
     accent: BRAND_BLUE,
@@ -50,52 +47,10 @@ const categories = [
 ];
 
 const products = [
-  {
-    name: "Premium Wireless Headphones",
-    price: "KES 4,999",
-    oldPrice: "KES 6,500",
-    rating: "4.8",
-    reviews: 126,
-    category: "Electronics",
-    badge: "SALE",
-    icon: "🎧",
-  },
-  {
-    name: "Classic Men's Sneakers",
-    price: "KES 3,499",
-    oldPrice: "KES 4,500",
-    rating: "4.7",
-    reviews: 89,
-    category: "Fashion",
-    badge: "20% OFF",
-    icon: "👟",
-  },
-  {
-    name: "Premium Eau de Parfum",
-    price: "KES 4,900",
-    oldPrice: "KES 6,500",
-    rating: "4.9",
-    reviews: 214,
-    category: "Beauty",
-    badge: "HOT",
-    icon: "🧴",
-  },
-  {
-    name: "Smart Watch Pro",
-    price: "KES 5,999",
-    oldPrice: "KES 7,500",
-    rating: "4.6",
-    reviews: 73,
-    category: "Electronics",
-    badge: "NEW",
-    icon: "⌚",
-  },
-];
-
-const vendors = [
-  { name: "Almasso Electronics", category: "Electronics & Gadgets", rating: "4.9", products: "320+ Products", icon: "⚡" },
-  { name: "Almasso Fashion", category: "Fashion & Accessories", rating: "4.8", products: "580+ Products", icon: "👗" },
-  { name: "Almasso Beauty", category: "Beauty & Perfumes", rating: "4.9", products: "240+ Products", icon: "✨" },
+  { name: "Premium Wireless Headphones", price: "KES 4,999", oldPrice: "KES 6,500", rating: "4.8", reviews: 126, category: "Electronics", badge: "SALE", icon: "🎧" },
+  { name: "Classic Men's Sneakers", price: "KES 3,499", oldPrice: "KES 4,500", rating: "4.7", reviews: 89, category: "Fashion", badge: "20% OFF", icon: "👟" },
+  { name: "Premium Eau de Parfum", price: "KES 4,900", oldPrice: "KES 6,500", rating: "4.9", reviews: 214, category: "Beauty", badge: "HOT", icon: "🧴" },
+  { name: "Smart Watch Pro", price: "KES 5,999", oldPrice: "KES 7,500", rating: "4.6", reviews: 73, category: "Electronics", badge: "NEW", icon: "⌚" },
 ];
 
 const values = [
@@ -120,6 +75,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#F7F9FC] text-[#102A43]">
+      {/* TOP BAR */}
       <div className="bg-[#0E4B9C] text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs sm:px-6 lg:px-8">
           <p className="hidden sm:block">Welcome to Almasso Marketplace — Get Hooked on Quality.</p>
@@ -132,10 +88,10 @@ export default function Home() {
         </div>
       </div>
 
+      {/* HEADER */}
       <header className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex min-h-20 items-center gap-4 py-3">
-            {/* LOGO - WAXAA HALKAN LOGO-GA LAGU BEDELAAY */}
             <a href="/" className="flex shrink-0 items-center gap-2">
               <img src="/logo.png" alt="Almasso Logo" className="h-11 w-11 rounded-xl object-contain shadow-sm bg-white" />
               <div className="hidden sm:block">
@@ -143,26 +99,17 @@ export default function Home() {
                 <div className="text-[9px] font-semibold tracking-widest text-[#FF8C1A]">GET HOOKED ON QUALITY</div>
               </div>
             </a>
-
             <div className="relative flex-1">
-              <input
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                type="search"
-                placeholder="Search products, brands and categories..."
-                className="h-12 w-full rounded-xl border border-gray-200 bg-[#F7F9FC] pl-12 pr-24 text-sm outline-none transition focus:border-[#0E4B9C] focus:bg-white"
-              />
+              <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search products, brands and categories..." className="h-12 w-full rounded-xl border border-gray-200 bg-[#F7F9FC] pl-12 pr-24 text-sm outline-none transition focus:border-[#0E4B9C] focus:bg-white" />
               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-xl text-gray-400">⌕</span>
               <button className="absolute right-1 top-1 h-10 rounded-lg bg-[#FF8C1A] px-5 text-sm font-bold text-white transition hover:bg-[#E97805]">Search</button>
             </div>
-
             <div className="hidden items-center gap-5 lg:flex">
               <button className="text-sm font-semibold hover:text-[#0E4B9C]">♡ <span className="ml-1">Wishlist</span></button>
               <button className="text-sm font-semibold hover:text-[#0E4B9C]">👤 <span className="ml-1">Account</span></button>
               <button className="relative text-xl">🛒<span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#FF8C1A] text-[10px] font-bold text-white">0</span></button>
             </div>
           </div>
-
           <nav className="hidden h-12 items-center gap-8 md:flex">
             <button className="flex items-center gap-2 font-bold text-[#0E4B9C]">☰ Categories</button>
             <a href="#" className="font-medium hover:text-[#0E4B9C]">Home</a>
@@ -175,6 +122,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="relative min-h-[440px] transition-colors duration-700" style={{ backgroundColor: banner.bg }}>
           <div className="mx-auto grid min-h-[440px] max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-2 lg:px-8">
@@ -206,6 +154,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TRUST STRIP */}
       <section className="border-b border-gray-200 bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[ ["🚚", "Reliable Delivery", "Across our markets"], ["🔒", "Secure Shopping", "Protected checkout"], ["✓", "Trusted Sellers", "Quality marketplace"], ["↩", "Customer Support", "We are here to help"] ].map(([icon, title, text]) => (
@@ -217,6 +166,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="mb-7 flex items-end justify-between">
           <div><p className="text-sm font-bold uppercase tracking-widest text-[#FF8C1A]">Explore</p><h2 className="mt-1 text-2xl font-black sm:text-3xl">Shop by Category</h2></div>
@@ -233,6 +183,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRODUCTS */}
       <section className="bg-white py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-7 flex items-end justify-between">
@@ -260,6 +211,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* VISION + MISSION */}
       <section className="bg-[#F7F9FC] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
@@ -279,6 +231,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CORE VALUES */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-2xl text-center">
@@ -297,6 +250,58 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ============ FOOTER - QEYBTA HOOSE EE SOCIAL MEDIA ============ */}
+      <footer className="bg-[#102A43] text-white">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-4">
+            <div className="lg:col-span-2">
+              <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="Almasso" className="h-10 w-10 rounded-xl bg-white object-contain" />
+                <div>
+                  <div className="text-xl font-black">ALMASSO</div>
+                  <div className="text-[10px] tracking-widest text-[#FF8C1A]">GET HOOKED ON QUALITY</div>
+                </div>
+              </div>
+              <p className="mt-4 max-w-md text-sm leading-6 text-white/60">
+                Almasso is a trusted African marketplace connecting you with quality products from verified sellers in Somalia, Kenya and across Africa.
+              </p>
+              <div className="mt-6 flex gap-3">
+                <a href="https://facebook.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-black transition hover:bg-[#FF8C1A]">f</a>
+                <a href="https://instagram.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">📷</a>
+                <a href="https://x.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">𝕏</a>
+                <a href="https://tiktok.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">♪</a>
+                <a href="https://youtube.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">▶</a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-black uppercase tracking-widest">Company</h4>
+              <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
+                <a href="#" className="hover:text-white">About Us</a>
+                <a href="#" className="hover:text-white">Careers</a>
+                <a href="#" className="hover:text-white">Become a Seller</a>
+                <a href="#" className="hover:text-white">Contact Us</a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-black uppercase tracking-widest">Help</h4>
+              <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
+                <a href="#" className="hover:text-white">Help Center</a>
+                <a href="#" className="hover:text-white">Shipping & Delivery</a>
+                <a href="#" className="hover:text-white">Returns</a>
+                <a href="#" className="hover:text-white">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row">
+            <p>© 2026 Almasso Marketplace. All rights reserved.</p>
+            <p>Made with ❤️ for Africa - Somalia • Kenya • Africa • World</p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
