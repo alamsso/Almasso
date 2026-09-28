@@ -75,7 +75,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#F7F9FC] text-[#102A43]">
-      {/* TOP BAR */}
       <div className="bg-[#0E4B9C] text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs sm:px-6 lg:px-8">
           <p className="hidden sm:block">Welcome to Almasso Marketplace — Get Hooked on Quality.</p>
@@ -88,7 +87,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* HEADER */}
       <header className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex min-h-20 items-center gap-4 py-3">
@@ -122,7 +120,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="relative min-h-[440px] transition-colors duration-700" style={{ backgroundColor: banner.bg }}>
           <div className="mx-auto grid min-h-[440px] max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-2 lg:px-8">
@@ -154,7 +151,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
       <section className="border-b border-gray-200 bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[ ["🚚", "Reliable Delivery", "Across our markets"], ["🔒", "Secure Shopping", "Protected checkout"], ["✓", "Trusted Sellers", "Quality marketplace"], ["↩", "Customer Support", "We are here to help"] ].map(([icon, title, text]) => (
@@ -166,7 +162,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CATEGORIES */}
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="mb-7 flex items-end justify-between">
           <div><p className="text-sm font-bold uppercase tracking-widest text-[#FF8C1A]">Explore</p><h2 className="mt-1 text-2xl font-black sm:text-3xl">Shop by Category</h2></div>
@@ -183,7 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRODUCTS */}
       <section className="bg-white py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-7 flex items-end justify-between">
@@ -211,7 +205,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VISION + MISSION */}
       <section className="bg-[#F7F9FC] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
@@ -231,7 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CORE VALUES */}
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-2xl text-center">
@@ -251,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ FOOTER - QEYBTA HOOSE EE SOCIAL MEDIA ============ */}
+      {/* FOOTER - SOCIAL MEDIA OO SHAQEYNAYA */}
       <footer className="bg-[#102A43] text-white">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-4">
@@ -267,12 +259,13 @@ export default function Home() {
                 Almasso is a trusted African marketplace connecting you with quality products from verified sellers in Somalia, Kenya and across Africa.
               </p>
               <div className="mt-6 flex gap-3">
-                <a href="https://facebook.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-black transition hover:bg-[#FF8C1A]">f</a>
-                <a href="https://instagram.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">📷</a>
-                <a href="https://x.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">𝕏</a>
-                <a href="https://tiktok.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">♪</a>
-                <a href="https://youtube.com" target="_blank" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">▶</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-black transition hover:bg-[#FF8C1A]">f</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">📷</a>
+                <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">𝕏</a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">♪</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">▶</a>
               </div>
+              <p className="mt-4 text-xs text-white/40">Markaad ku dhufatid icon-ka - wuu furmayaa tab cusub!</p>
             </div>
 
             <div>
