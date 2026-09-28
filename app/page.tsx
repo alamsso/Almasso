@@ -243,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER - SOCIAL MEDIA OO SHAQEYNAYA */}
+      {/* FOOTER - ONLY SOCIAL MEDIA UPDATED - REAL LINKS */}
       <footer className="bg-[#102A43] text-white">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-4">
@@ -258,14 +258,31 @@ export default function Home() {
               <p className="mt-4 max-w-md text-sm leading-6 text-white/60">
                 Almasso is a trusted African marketplace connecting you with quality products from verified sellers in Somalia, Kenya and across Africa.
               </p>
-              <div className="mt-6 flex gap-3">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-black transition hover:bg-[#FF8C1A]">f</a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">📷</a>
-                <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">𝕏</a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">♪</a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#FF8C1A]">▶</a>
+
+              {/* SOCIAL MEDIA - REAL LINKS - PROFESSIONAL BUTTONS */}
+              <div className="mt-6">
+                <p className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Follow Us</p>
+                <div className="flex flex-wrap gap-3">
+                  <a href="https://www.facebook.com/share/19QX5ex4um/" target="_blank" rel="noopener noreferrer" className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#1877F2] text-sm font-black shadow-lg transition hover:-translate-y-1 hover:shadow-xl">f</a>
+                  <a href="https://www.instagram.com/almasso_marketplace" target="_blank" rel="noopener noreferrer" className="group flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#515BD4] shadow-lg transition hover:-translate-y-1 hover:shadow-xl">📷</a>
+                  <a href="https://www.tiktok.com/@almassomarketplace" target="_blank" rel="noopener noreferrer" className="group flex h-11 w-11 items-center justify-center rounded-full bg-black shadow-lg ring-1 ring-white/20 transition hover:-translate-y-1 hover:shadow-xl">♪</a>
+                  <a href="https://youtube.com/@almassomarketplace" target="_blank" rel="noopener noreferrer" className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#FF0000] shadow-lg transition hover:-translate-y-1 hover:shadow-xl">▶</a>
+                </div>
               </div>
-              <p className="mt-4 text-xs text-white/40">Markaad ku dhufatid icon-ka - wuu furmayaa tab cusub!</p>
+
+              {/* CONTACT - PROFESSIONAL */}
+              <div className="mt-8 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+                <p className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Contact Us</p>
+                <div className="flex flex-col gap-3">
+                  <a href="tel:+254799952727" className="flex items-center gap-3 text-sm text-white/80 hover:text-white"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10">🇰🇪</span> +254 799 952 727 <span className="rounded-full bg-[#FF8C1A]/20 px-2 py-0.5 text-[10px] text-[#FF8C1A]">Kenya</span></a>
+                  <a href="tel:+252615803965" className="flex items-center gap-3 text-sm text-white/80 hover:text-white"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10">🇸🇴</span> +252 615 803 965 <span className="rounded-full bg-[#FF8C1A]/20 px-2 py-0.5 text-[10px] text-[#FF8C1A]">Somalia</span></a>
+                  <div className="mt-2 flex gap-2">
+                    <a href="https://wa.me/254799952727" target="_blank" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-bold text-white shadow-lg transition hover:bg-[#128C7E]">💬 WhatsApp Kenya</a>
+                    <a href="https://wa.me/252615803965" target="_blank" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-bold text-[#102A43] shadow-lg transition hover:bg-gray-100">💬 WhatsApp Somalia</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             <div>
